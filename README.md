@@ -6,6 +6,7 @@
 * The popup can be expanded and collapsed based on user interaction (Please view screenshots for more info) 
 * Please follow a dynamic approach (re-usable components) to create the UI.
 * Please follow best practises on committing, pushing your code. 
+* Please create a new branch before starting working on the assignment. 
 
 #### Extra points
 * Use of Apple's Combine Framework
