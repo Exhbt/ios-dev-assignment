@@ -2,8 +2,10 @@
 
 ### What to do
 * Please create a simple app with a popup displayed on a screen.
-* The popup is displayed in bottom of the screen and has the half height of screen. 
+* The popup is displayed in bottom of the screen.
+* Height of the popup is dynamic and at least the half of the screen. 
 * The popup can be expanded and collapsed based on user interaction (Please view screenshots for more info) 
+* When the popup is expanded, height should be dynamic to its content. 
 * Please follow a dynamic approach (re-usable components) to create the UI.
 * Please follow best practises on committing, pushing your code. 
 * Please create a new branch before starting working on the assignment. 
