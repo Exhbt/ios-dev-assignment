@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     
     @objc func helloButtonAction() {
         let vc = PopupVC()
-        present(vc, animated: true)
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: false)
     }
     
     func setupConstraints() {
