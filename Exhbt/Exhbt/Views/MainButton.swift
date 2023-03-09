@@ -9,31 +9,52 @@ import UIKit
 
 final class MainButton: UIButton {
     
-    var shouldApplyBorder = false
     var title = ""
-    init(title: String, shouldApplyBorder: Bool? = nil) {
+    init(title: String) {
         super.init(frame: .zero)
         self.title = title
-        self.shouldApplyBorder = shouldApplyBorder ?? false
         self.setup()
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        self.setup()
     }
     
     func setup() {
-        if #available(iOS 15.0, *) {
-            configuration = .plain()
-        }
         titleLabel?.font = .systemFont(ofSize: 20)
-        setTitleColor(shouldApplyBorder ? .systemBlue : .white, for: .normal)
-        setTitle(title, for: .normal)
-        backgroundColor = shouldApplyBorder ? .clear : .systemBlue
-        layer.cornerRadius = 8
-        if shouldApplyBorder {
-            layer.borderWidth = 1
-            layer.borderColor = UIColor.systemBlue.cgColor
+        setTitleColor(.white, for: .normal)
+        if !title.isEmpty {
+            setTitle(title, for: .normal)
         }
+        backgroundColor = .systemBlue
+        layer.cornerRadius = 8
+    }
+}
+
+final class BorderedButton: UIButton {
+    
+    var title = ""
+    init(title: String) {
+        super.init(frame: .zero)
+        self.title = title
+        self.setup()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        self.setup()
+    }
+    
+    func setup() {
+        titleLabel?.font = .systemFont(ofSize: 20)
+        setTitleColor(.systemBlue, for: .normal)
+        if !title.isEmpty {
+            setTitle(title, for: .normal)
+        }
+        backgroundColor = .clear
+        layer.cornerRadius = 8
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.systemBlue.cgColor
     }
 }

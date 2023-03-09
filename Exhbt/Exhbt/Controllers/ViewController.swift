@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupConstraints()
+        helloButton.addTarget(self, action: #selector(ViewController.helloButtonAction), for: .touchUpInside)
+    }
+    
+    @objc func helloButtonAction() {
+        let vc = PopupVC()
+        present(vc, animated: true)
     }
     
     func setupConstraints() {

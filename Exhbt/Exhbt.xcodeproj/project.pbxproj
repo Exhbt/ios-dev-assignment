@@ -14,6 +14,10 @@
 		31991B8729B970D300048D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31991B8629B970D300048D67 /* Assets.xcassets */; };
 		31991B8A29B970D300048D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31991B8829B970D300048D67 /* LaunchScreen.storyboard */; };
 		31991B9329B974E100048D67 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31991B9229B974E100048D67 /* MainButton.swift */; };
+		31991B9829B97E0500048D67 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31991B9629B97E0500048D67 /* PopupVC.swift */; };
+		31991B9929B97E0500048D67 /* PopupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31991B9729B97E0500048D67 /* PopupVC.xib */; };
+		31991BA029B997A000048D67 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31991B9E29B997A000048D67 /* TableViewCell.swift */; };
+		31991BA129B997A000048D67 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31991B9F29B997A000048D67 /* TableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		31991B8929B970D300048D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31991B8B29B970D300048D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31991B9229B974E100048D67 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		31991B9629B97E0500048D67 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		31991B9729B97E0500048D67 /* PopupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupVC.xib; sourceTree = "<group>"; };
+		31991B9E29B997A000048D67 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		31991B9F29B997A000048D67 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +68,7 @@
 			children = (
 				31991B7D29B970D000048D67 /* AppDelegate.swift */,
 				31991B7F29B970D000048D67 /* SceneDelegate.swift */,
-				31991B8129B970D000048D67 /* ViewController.swift */,
+				31991B9D29B9977700048D67 /* Controllers */,
 				31991B9129B974C000048D67 /* Views */,
 				31991B8329B970D000048D67 /* Main.storyboard */,
 				31991B8629B970D300048D67 /* Assets.xcassets */,
@@ -74,8 +82,20 @@
 			isa = PBXGroup;
 			children = (
 				31991B9229B974E100048D67 /* MainButton.swift */,
+				31991B9E29B997A000048D67 /* TableViewCell.swift */,
+				31991B9F29B997A000048D67 /* TableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		31991B9D29B9977700048D67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31991B8129B970D000048D67 /* ViewController.swift */,
+				31991B9629B97E0500048D67 /* PopupVC.swift */,
+				31991B9729B97E0500048D67 /* PopupVC.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				31991B8A29B970D300048D67 /* LaunchScreen.storyboard in Resources */,
+				31991BA129B997A000048D67 /* TableViewCell.xib in Resources */,
+				31991B9929B97E0500048D67 /* PopupVC.xib in Resources */,
 				31991B8729B970D300048D67 /* Assets.xcassets in Resources */,
 				31991B8529B970D000048D67 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +174,8 @@
 				31991B9329B974E100048D67 /* MainButton.swift in Sources */,
 				31991B8229B970D000048D67 /* ViewController.swift in Sources */,
 				31991B7E29B970D000048D67 /* AppDelegate.swift in Sources */,
+				31991BA029B997A000048D67 /* TableViewCell.swift in Sources */,
+				31991B9829B97E0500048D67 /* PopupVC.swift in Sources */,
 				31991B8029B970D000048D67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
